@@ -1,3 +1,5 @@
 <Solution>
   <Project Path="ImageProcessingService.Api/ImageProcessingService.Api.csproj" />
+  <Project Path="ImageProcessingService.Application\ImageProcessingService.Application.csproj" />
+  <Project Path="ImageProcessingService.Infrastructure/ImageProcessingService.Infrastructure.csproj" />
 </Solution>
