@@ -1,4 +1,5 @@
 using System.Text;
+using ImageProcessingService.Api;
 using ImageProcessingService.Api.Controllers;
 using ImageProcessingService.Domain.Entities;
 using ImageProcessingService.Infrastructure;
@@ -21,6 +22,7 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(connect
 
 builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
 builder.Services.AddScoped<JwtService>();
+builder.Services.AddScoped<UploadHandler>();
 
 builder.Services.AddAuthentication(options =>
     {
